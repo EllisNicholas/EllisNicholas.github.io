@@ -67,7 +67,8 @@ body > section{
 
 /* Header ============================== */
 header{
-
+padding: 0 0 20rem 0;
+    background-color: #6F767B;
 }
 
 nav li{
@@ -78,14 +79,19 @@ nav li{
 }
 
 /* Main ============================== */
+#About{
+    background-color: #eeeeee;
+}
 #About h2{
     font-size: 2.5rem;
     color: #302F33;
     padding: 10rem 0 0 0;
     margin: 0 0 0 25rem;
+    background-color: #EEC85F;
 }
 #About li{
     margin: 0 0 0 25rem;
+    background-color: #EEC85F;
 }
 #About h3{
     font-size: 5rem;
@@ -108,7 +114,8 @@ nav li{
 #Testimonials{
     display: inline-block;
     margin: 0 50rem 0 0;
-    padding: 0 45rem 0 45rem;
+    padding: 0 45rem 20rem 45rem;
+    background-color: #eeeeee;
 }
 #Testimonials h2{
     font-size: 5rem;
@@ -123,6 +130,9 @@ nav li{
 }
 
 /* Team ================================ */
+#Team{
+    background-color: #eeeeee;
+}
 #Team h2{
     font-size: 5rem;
     color: #302F33;
@@ -137,6 +147,7 @@ nav li{
 /* Footer ================================ */
 footer{
     display: inline-block;
+    background-color: #373131;
 
 }
 footer li{
