@@ -1,0 +1,151 @@
+/* Google Fonts ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+/* CSS Reset =========================== */
+body, nav, section, footer, article,
+h1, h2, h3, p, a, ul, li, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%;
+    text-decoration: none;
+    font-weight: normal;
+    color: inherit;
+    box-sizing: border-box;
+}
+/* Typography Defaults ================= */
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    background-color: orange;
+}
+
+h1{
+    margin: 2rem 0 4rem 0;
+    float: left;
+}
+h2{
+    font-size: 2.5rem;
+    margin: 2rem 0 4rem 0;
+    color: #302F33;
+}
+h3{
+    font-size: 1.6rem;
+    color: #302F33;
+    margin-bottom: 1rem;
+}
+p{
+    margin-bottom: 2rem;
+    color: #939697;
+}
+
+
+a{
+    display: inline;
+    padding: .5rem 1rem;
+    background-color: rgba(255,255,255,.1);
+    color: #eeeeee;
+}
+strong{
+    color: #302F33;
+}
+
+/* Default Structure =================== */
+nav, body > section, footer{
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 8rem;
+
+}
+body > section{
+    border-bottom: 1px solid
+    rgba(255,255,255,.1);
+}
+
+/* Header ============================== */
+header{
+
+}
+
+nav li{
+    margin: 2rem 0 4rem 0;
+    padding: 0 .5rem .23rem .5rem;
+    display: inline;
+    float: right;
+}
+
+/* Main ============================== */
+#About h2{
+    font-size: 2.5rem;
+    color: #302F33;
+    padding: 10rem 0 0 0;
+    margin: 0 0 0 25rem;
+}
+#About li{
+    margin: 0 0 0 25rem;
+}
+#About h3{
+    font-size: 5rem;
+    float: right;
+    padding: 12rem 0 0 0;
+    margin: 0 25rem 0 0;
+}
+
+#About img{
+    margin: 0  5rem 0 25rem;
+    padding: 25rem 0 0 10rem;
+}
+#About p{
+    margin: 0  0 0 25rem;
+    padding: 0 0 5rem 55rem;
+
+}
+
+/* Testimonials ================================ */
+#Testimonials{
+    display: inline-block;
+    margin: 0 50rem 0 0;
+    padding: 0 45rem 0 45rem;
+}
+#Testimonials h2{
+    font-size: 5rem;
+    color: #302F33;
+    padding: 5rem;
+    margin: 0 5rem 0 0;
+}
+
+#Testimonials a{
+    color: #949798;
+
+}
+
+/* Team ================================ */
+#Team h2{
+    font-size: 5rem;
+    color: #302F33;
+    padding: 5rem;
+    margin: 0 5rem 0 0;
+    float: right;
+}
+#Team a{
+    color: #302F33;
+}
+
+/* Footer ================================ */
+footer{
+    display: inline-block;
+
+}
+footer li{
+    color: #eee;
+    display: inline-block;
+}
+footer address{
+    color: #eeeeee;
+    float: right;
+    padding: 0 0 20rem 60rem;
+}
