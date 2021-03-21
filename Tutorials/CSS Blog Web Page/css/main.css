@@ -23,7 +23,7 @@ body{
 	line-height: 1.6;
 	font-family: "Open Sans", sans-serif;
 	color: #777777;
-	background-color: #222222;
+	background: #222222;
 }
 h1{
 	font-size: 7rem;
@@ -49,7 +49,7 @@ img{
 a{
 	display: inline-block;
 	padding: .5rem 1rem;
-	background-color: rgba(255,255,255,.1);
+	background: rgba(255,255,255,.1);
 	color: #eeeeee;
 }
 
@@ -64,10 +64,21 @@ body > section{
 	border-bottom: 1px solid
 	rgba(255,255,255,.1);
 }
+body > section::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+footer::after{
+	content: " ";
+	display: block;
+	clear: both;
+}
 
 /* Header ============================== */
 header{
-	background-color: #ffffff;
+	background: #ffffff;
 }
 nav a{
 	color: #555555;
@@ -93,6 +104,14 @@ nav li{
 	border-top: .5rem solid #1abc9c;
 }
 
+#blog article{
+	width: calc(100%/3 - 2rem);
+	float: left;
+}
+#blog article:not(:nth-of-type(3)){
+	margin-right: 2rem;
+}
+
 /* News ================================ */
 time span{
 	font-size: 5rem;
@@ -100,12 +119,31 @@ time span{
 	vertical-align: middle;
 }
 
+#news article{
+	width: calc(100%/4 - 6rem/4);
+	float: left;
+}
+
+#news article:not(:nth-of-type(4)) {
+	margin-right: 2rem;
+}
+
+
 /* Donation ============================ */
 #donation{
-	background-image: url("urltoimg");
-	background-image: url("https://coolbackgrounds.io/images/backgrounds/black/black-triangle-b9cb7263.jpg");
-	background-repeat: no-repeat;
+	background: url("urltoimg");
+	background: url("https://coolbackgrounds.io/images/backgrounds/black/black-triangle-b9cb7263.jpg") no-repeat;
 
+}
+
+/* About ============================== */
+#about section{
+	width: calc(100%/2 - 2rem);
+	float: left;
+}
+
+#about section:first-of-type{
+	margin-right: 2rem;
 }
 
 /* Footer ============================== */
@@ -118,7 +156,18 @@ footer h2{
 	display: inline-block;
 }
 #tags a{
-	background-color: #e74c3c;
+	background: #e74c3c;
 	color: #eeeeee;
 	padding: 0 .5rem .25rem .5rem;
+}
+
+footer section {
+	width: calc(30% - 2rem);
+	margin-right: 2rem;
+	float: left;
+}
+
+#tags{
+	width: calc(40%);
+	margin-right: 0rem;
 }
