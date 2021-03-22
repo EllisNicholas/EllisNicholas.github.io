@@ -18,10 +18,9 @@ html {
     font-size: 62.5%;
 }
 body{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.4rem;
+    font: 1.4rem 'Ubuntu', sans-serif;
     line-height: 1.6;
-    background-color: orange;
+    background: url("images/body.png") no-repeat 50% 80% ;
 }
 
 h1{
@@ -64,74 +63,85 @@ body > section{
     border-bottom: 1px solid
     rgba(255,255,255,.1);
 }
+.clear{
+    clear: both;
+}
 
 /* Header ============================== */
 header{
 padding: 0 0 20rem 0;
-    background-color: #6F767B;
+    background: url("images/header.jpeg") no-repeat 50% 66%;
+
 }
 
 nav li{
-    margin: 2rem 0 4rem 0;
-    padding: 0 .5rem .23rem .5rem;
-    display: inline;
-    float: right;
+    margin:2rem auto;
+    padding: 0 .5rem .2rem 1rem;
+    display: inline-flex;
+
 }
 
 /* Main ============================== */
 #About{
-    background-color: #eeeeee;
+    max-width: 75rem;
+    margin: 10rem auto;
+
 }
 #About h2{
     font-size: 2.5rem;
     color: #302F33;
-    padding: 10rem 0 0 0;
-    margin: 0 0 0 25rem;
-    background-color: #EEC85F;
+    margin: auto;
+
 }
 #About li{
-    margin: 0 0 0 25rem;
-    background-color: #EEC85F;
+    margin: auto;
+
 }
 #About h3{
     font-size: 5rem;
     float: right;
-    padding: 12rem 0 0 0;
-    margin: 0 25rem 0 0;
+    margin:20rem auto;
 }
 
 #About img{
-    margin: 0  5rem 0 25rem;
-    padding: 25rem 0 0 10rem;
+    margin: auto;
+
 }
 #About p{
-    margin: 0  0 0 25rem;
-    padding: 0 0 5rem 55rem;
+    margin: auto;
+
 
 }
 
 /* Testimonials ================================ */
 #Testimonials{
-    display: inline-block;
-    margin: 0 50rem 0 0;
-    padding: 0 45rem 20rem 45rem;
-    background-color: #eeeeee;
+    margin: 20rem auto;
+    padding: 0 20rem 0 0;
+    width: 50rem;
+
+
 }
+
+
 #Testimonials h2{
     font-size: 5rem;
     color: #302F33;
     padding: 5rem;
-    margin: 0 5rem 0 0;
+    margin: auto;
 }
 
 #Testimonials a{
     color: #949798;
+    margin: auto;
 
 }
 
+
 /* Team ================================ */
 #Team{
-    background-color: #eeeeee;
+    margin: 20rem auto;
+    max-width: 100rem;
+    background: url("images/body.png");
 }
 
 #Team h2{
@@ -139,24 +149,34 @@ nav li{
     color: #302F33;
     padding: 5rem;
     margin: 0 5rem 0 0;
-    float: right;
+
 }
 #Team a{
     color: #302F33;
 }
 
+#Team article{
+    width: calc(100%/4 - 6rem/4);
+    float: left;
+}
+
+#Team article:not(:nth-of-type(4)) {
+    margin-right: 2rem;
+}
+
 /* Footer ================================ */
 footer{
-    display: inline-block;
-    background-color: #373131;
+    margin:  auto;
+    max-width: 100rem;
+    padding: 20rem 0 0 0;
+    background: url("images/footer.jpeg") no-repeat ;
 
 }
 footer li{
     color: #eee;
-    display: inline-block;
+    display: inline-flex;
 }
+
 footer address{
     color: #eeeeee;
-    float: right;
-    padding: 0 0 20rem 60rem;
 }
