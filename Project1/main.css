@@ -21,6 +21,7 @@ body{
     font: 1.4rem 'Ubuntu', sans-serif;
     line-height: 1.6;
     background: url("images/body.png") no-repeat 50% 80% ;
+
 }
 
 h1{
@@ -44,7 +45,7 @@ p{
 
 
 a{
-    display: inline;
+    display: inline-flex;
     padding: .5rem 1rem;
     color: #eeeeee;
 }
@@ -86,6 +87,7 @@ nav li{
     max-width: 75rem;
     margin: 10rem auto;
 
+
 }
 #About h2{
     font-size: 2.5rem;
@@ -119,7 +121,6 @@ nav li{
     padding: 0 20rem 0 0;
     width: 50rem;
 
-
 }
 
 
@@ -142,6 +143,8 @@ nav li{
     margin: 20rem auto;
     max-width: 100rem;
     background: url("images/body.png");
+
+
 }
 
 #Team h2{
@@ -156,12 +159,12 @@ nav li{
 }
 
 #Team article{
-    width: calc(100%/4 - 6rem/4);
+    width: calc(100%/4 - 10rem/4);
     float: left;
 }
 
 #Team article:not(:nth-of-type(4)) {
-    margin-right: 2rem;
+    margin: 0 2rem 5rem 0;
 }
 
 /* Footer ================================ */
@@ -170,6 +173,7 @@ footer{
     max-width: 100rem;
     padding: 20rem 0 0 0;
     background: url("images/footer.jpeg") no-repeat ;
+
 
 }
 footer li{
